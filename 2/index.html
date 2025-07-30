@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Membership Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>🎉 Join Our Club</h1>
+    <p>Fill in the form below to become a member!</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">👤 Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">🎂 Age</label>
+        <input type="number" id="age" placeholder="Enter your age" min="5" max="100" required>
+      </div>
+
+      <div class="form-group">
+        <label for="interest">🎯 Your Interest</label>
+        <select id="interest" required>
+          <option value="" disabled selected>Select an interest</option>
+          <option value="sports">Sports</option>
+          <option value="art">Art</option>
+          <option value="music">Music</option>
+          <option value="tech">Technology</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">📝 Why do you want to join?</label>
+        <textarea id="message" rows="4" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <button type="submit">✅ Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>

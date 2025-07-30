@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Container styling */
+  .container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* Heading */
+  .container h1 {
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph */
+  .container p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Journey section */
+  .journey {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styled links */
+  .step {
+    text-decoration: none;
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 121, 107, 0.2);
+  }
+  
+  .step:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  

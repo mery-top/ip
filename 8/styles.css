@@ -1,0 +1,108 @@
+/* Reset and basic setup */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #283593;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #3949ab;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .content {
+    flex: 3;
+    min-width: 300px;
+  }
+  
+  article {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  article img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+  }
+  
+  .meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  aside {
+    flex: 1;
+    min-width: 250px;
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  aside h3 {
+    margin-top: 0;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  aside li {
+    margin-bottom: 12px;
+  }
+  
+  aside a {
+    text-decoration: none;
+    color: #e65100;
+    font-weight: 500;
+  }
+  
+  footer {
+    background: #eeeeee;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

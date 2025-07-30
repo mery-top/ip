@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Before & After Comparison</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖼 Before & After Comparison</h1>
+    <div class="image-comparison">
+      <div class="after">
+        <img src="after.jpeg" alt="After Image">
+      </div>
+      <div class="before" id="beforeDiv">
+        <img src="before.jpeg" alt="Before Image">
+      </div>
+      <input type="range" min="0" max="100" value="50" id="slider">
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById("slider");
+    const beforeDiv = document.getElementById("beforeDiv");
+
+    slider.addEventListener("input", function() {
+      beforeDiv.style.width = `${this.value}%`;
+    });
+  </script>
+</body>
+</html>
