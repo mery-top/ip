@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopMart - Contact</title>
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPos);
+      } else {
+        document.getElementById("loc").innerText = "Geolocation is not supported.";
+      }
+    }
+
+    function showPos(position) {
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+      document.getElementById("loc").innerHTML = 
+        `Your Location: Latitude: ${lat.toFixed(5)}, Longitude: ${lon.toFixed(5)}<br>` +
+        `<iframe width="100%" height="300" 
+        src="https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed"></iframe>`;
+    }
+  </script>
+</head>
+<body onload="getLocation()">
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="products.html">Products</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Our Store Location</h2>
+    <p>We’ll find your current location using your browser.</p>
+    <div id="loc">Locating...</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShopMart</p>
+  </footer>
+</body>
+</html>
